@@ -1,23 +1,23 @@
-'use strict'; 
+'use strict';
 
 //Question 1
 //1.  Constant  O(1) - doesn't matter how many other people are in the room, only one operation is performed
 //2.  Linear O(n) - loop over however many people are in the room once.
 
 //Question 2
-//Constant O(1)  - performs the same number of operations 
+//Constant O(1)  - performs the same number of operations
 
-//Question 3 
+//Question 3
 //Polynomial O(n^2) - two nested loops
 
-//Question 4 
+//Question 4
 //Linear 0(n) - performs the operation once for every element in the array
 
 //Question 5
-//Linear O(n) - best case  - constant O(1) if array only has one item / worst case - has to iterate over every element in the array 
+//Linear O(n) - best case  - constant O(1) if array only has one item / worst case - has to iterate over every element in the array
 
 //Question 6
-//Polynomial O(n^2) - two nested loops 
+//Polynomial O(n^2) - two nested loops
 
 //Question 7
 // The funciton is an iterative Fibonacci generator. Linear 0(n) - scales based on value of num
@@ -43,14 +43,29 @@ const sheep = function (num){
   console.log('All sheep jumped over the fence.');
 };
 
-// console.log(sheep(5)); 
+// console.log(sheep(5));
 
 const powerCalc = function (base, exp) {
-  let result = 1; 
+  let result = 1;
   for (let i = 1; i <= exp; i++ ){
-    result *= base; 
+    result *= base;
   }
-  return result; 
+  return result;
 };
 
 // console.log(powerCalc(2, 0));
+
+
+const reverseString = function (str) {
+
+  let output = '';
+
+  for (let i = str.length-1; i >= 0; i--) {
+
+    output += str[i];
+  }
+
+  return output;
+};
+
+console.log(reverseString('abcdefg'));
