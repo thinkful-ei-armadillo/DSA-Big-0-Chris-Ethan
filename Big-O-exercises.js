@@ -68,4 +68,19 @@ const reverseString = function (str) {
   return output;
 };
 
-console.log(reverseString('abcdefg'));
+// console.log(reverseString('abcdefg'));
+
+
+const trianglularNumber = function (num) {
+
+  let output = 0;
+
+  for (let i = 1; i <= num; i++) {
+
+    output += i;
+  }
+
+  return output;
+};
+
+console.log(trianglularNumber(3));
