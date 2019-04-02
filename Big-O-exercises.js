@@ -83,4 +83,55 @@ const trianglularNumber = function (num) {
   return output;
 };
 
-console.log(trianglularNumber(3));
+// console.log(trianglularNumber(3));
+
+
+const stringSplitter = function (str) {
+
+  let output = '';
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] !== '/') {
+      output += str[i];
+    }
+  }
+
+  return output;
+};
+
+// console.log(stringSplitter('02/02/2020'));
+
+const fibonacci = function (num) {
+
+  let result = [];
+  for (let i = 1; i <= num; i++) {
+
+    if (i === 1) {
+      result.push(0);
+    }
+    else if (i === 2) {
+      result.push(1);
+    }
+    else {
+      result.push(result[i - 2] + result[i - 3]);
+    }
+  }
+
+  return result;
+};
+
+// console.log(fibonacci(100));
+
+const factorial = function (num) {
+
+  let output = 1;
+
+  for (let i = 1; i <= num; i++) {
+
+    output *= i;
+  }
+
+  return output;
+};
+
+console.log(factorial(3));
